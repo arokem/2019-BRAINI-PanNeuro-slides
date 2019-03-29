@@ -6,7 +6,7 @@
 		<meta name="description" content="Talk at BRAIN Initiative PI meeting, April 2019">
 		<meta name="author" content="Ariel Rokem">
 
-		<title> U19 Data Science Core </title>
+		<title> PanNeuro </title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/arokem.css">
@@ -35,7 +35,7 @@
 		<h2>PanNeuro: leveraging a community-based approach for big data neuroscience</h2>
 		</em>
 		<br>April, 2019
-		<p><a href="http://arokem.org">Ariel Rokem</a>,
+		<p><a href="http://arokem.org">Ariel Rokem</a><br>
 		<a href="http://escience.washington.edu">The University of Washington eScience Institute</a> </p>
 		<p>  <small>Follow along at: <t><a href="https://arokem.github.io/2019-BRAINI-PanNeuro-slides/">https://arokem.github.io/2019-BRAINI-PanNeuro-slides/</t></a></small></p>
 
@@ -47,47 +47,100 @@
 	</section>
 
     <section>
-            <h3>What does a light-weight data standard enable?</h3>
-            <p class="fragment">Minimal curation => reusability</p>
-            <p class="fragment">Validation: human and machine readable</p>
-            <p class="fragment">Development of automated analysis tools</p>
-            <div class="cite"><a href="https://www.nature.com/articles/sdata201644">Gorgolewski et al. (2016)</a><br>
+        <h2>Data-driven Neuroscience</h2>
+        <p class="fragment">Large</p>
+        <p class="fragment">Multi-scale</p>
+        <p class="fragment"></p>
+    </section>
+
+    <section>
+        <h2>Computational and circuit mechanisms underlying rapid learning</h2>
+        <p>NINDS/NIH U19 funded through the BRAIN Initiative</p>
+        <div class="row " data-fragment-index="1">
+            <div class="imgcite two-col">
+            <img src="img/brain-logo.png" height="300" align="middle" >
             </div>
-        </section>
-
-
-	<section>
-        <h2>BIDS: a scientist-friendly data standard</h2>
-        <p class="fragment"><a href="http://bids.neuroimaging.io/">The Brain Imaging Data Standard</a></p>
-        <p class="fragment">Supported by INCF</p>
-        <p class="fragment">Developed through an open and collaborative design process</p>
-        <p class="fragment">An ongoing process</p>
-        <div class="cite">
-        <a href="https://www.nature.com/articles/sdata201644">Gorgolewski et al. (2016)</a>
+            <div class="imgcite two-col">
+            <img src="img/NINDS.jpg" height="300" align="middle" >
+            </div>
         </div>
     </section>
 
     <section>
-        <img src="img/bids.jpg">
+        <h2>Learning to learn</h2>
+        <img src="img/harlow49.png" height="500">
+        <div class="cite">Harlow, 1949</div>
     </section>
 
     <section>
-        <a href="https://psyarxiv.com/r7vc2/"><img src="img/bids_ieeg.png"></a>
+            <img src="img/circuit-diagram.png" height="500">
     </section>
 
     <section>
-        <a href="https://psyarxiv.com/r7vc2/"><img src="img/bids_ieeg2.png"></a>
+        <div class="row " data-fragment-index="1">
+            <div class="imgcite fragment three-col">
+            <div class="imghead">Multi-channel recordings in NHP</div>
+            <img src="img/nhp-electrodes.png" align="middle">
+            </div>
+            <div class="imgcite fragment three-col">
+            <div class="imghead">ECoG recordings in human</div>
+            <img src="img/ecog-electrodes.png" height="300" align="middle">
+            </div>
+            <div class="imgcite fragment three-col">
+            <div class="imghead">Single unit recordings in human</div>
+            <img src="img/depth-electrodes.png" height="300" align="middle">
+            </div>
+            </div>
     </section>
 
     <section>
-        <a href="https://psyarxiv.com/r7vc2/"><img src="img/bids_ieeg3.png" height=550></a>
+        <img src="img/u19-collaboration.png" height="500">
     </section>
 
     <section>
-        <h3>Collaborative tool development</h3>
-        <img src="img/labtocat.png">
+        <img src="img/wcst.png">
     </section>
 
+    <section>
+        <img src="img/behrens-paradigm.png">
+        <div class="cite">
+            Adapted from Behrens et al. (2018)
+        </div>
+    </section>
+
+    <section>
+        <div class="row " data-fragment-index="1">
+            <div class="imgcite two-col">
+            <img src="img/state-space.jpg" align="middle">
+            </div>
+            <div class="imgcite fragment two-col">
+            <img src="img/network-state-space.jpg" height="300" align="middle">
+            </div>
+        </div>
+        <div class="cite">
+                <a href="https://www.cell.com/neuron/fulltext/S0896-6273(17)30185-X">Chaisangmongkon et al. (2017)</a>
+            </div>
+    </section>
+
+    <section>
+        <h2>Data types:</h2>
+        <p class="fragment">Behavioral results</p>
+        <p class="fragment">Non-human primate multichannel recordings</p>
+        <p class="fragment">Human grid and electrode recordings</p>
+        <p class="fragment">Model and simulation results</p>
+        <h2 class="fragment">Data volumes:</h2>
+        <p class="fragment">~5-20 TB/week at steady-state</p>
+        <p class="fragment">=> ~1-2 PB to store at steady-state</p>
+        <p class="fragment">~10%-20% of that needs to be routinely accessed</p>
+    </section>
+
+    <section>
+        <h2>Challenges of data-driven neuroscience </h2>
+        <p class="fragment">Large computational resources required</p>
+        <p class="fragment">Statistical methods and algorithms need to be adjusted</p>
+        <p class="fragment">Collaboration</p>
+        <p class="fragment">Reproducibility</p>
+    </section>
 
     <section>
         <h2>What are the requirements?</h2>
@@ -96,231 +149,304 @@
         <p class="fragment">Provide useful tools and interfaces</p>
         <p class="fragment">Facilitate interoperability (between datasets, between software libraries)</p>
         <p class="fragment">Control access</p>
+        <p class="fragment">Package into a reproducible unit</p>
     </section>
 
     <section>
-        <h2>To the cloud!</h2>
-        <p class="fragment">Co-localization of data and compute</p>
-        <p class="fragment">Scaling and elasticity</p>
-        <p class="fragment">Consistent and open to all</p>
+        <h2>Inspiration from other fields of science</h2>
+        <div class="row " data-fragment-index="1">
+            <div class="imgcite three-col">
+            <img src="img/big-stars.png" align="middle" >
+            </div>
+            <div class="imgcite three-col">
+            <img src="img/big-particles.png" align="middle" >
+            </div>
+            <div class="imgcite three-col">
+            <img src="img/big-genome.png" align="middle" >
+            </div>
+        </div>
     </section>
 
     <section>
-            <a href="http://pangeo.io/"><img src="img/pangeo_simple_logo.svg" height=100></a>
+        <h2>Big data in the geosciences</h2>
+        <img src="img/global-sst.jpg">
+        <div class="cite"><a href="https://oceanservice.noaa.gov/facts/sea-surface-temperature.html">National Oceanic and Atmospheric Administration</a></div>
     </section>
 
-	<!-- <section>
-            <h2>Open-source software for science</h2>
-            <p class="fragment">Python: an ecosystem for scientific computing </p>
-            <p class="fragment">Free and open source</p>
-            <p class="fragment">High-level interpreted language</p>
-            <p class="fragment">Very wide adoption</p>
-            <p class="fragment">Both in academic research and in industry</p>
+    <section>
+        <h2>Big data in the geosciences</h2>
+        <div class="row " data-fragment-index="1">
+                <div class="imgcite fragment two-col">
+                <img src="img/EOSDIS_archive_growth_updated_resize.jpg" align="middle" >
+                <cite>
+                        <a href="https://earthdata.nasa.gov/about/eosdis-cloud-evolution">https://earthdata.nasa.gov/about/eosdis-cloud-evolution</a>
+                </cite>
+                </div>
+                <div class="imgcite fragment two-col">
+                <img src="img/cmip-size.png" align="middle" >
+                </div>
+            </div>
 
             <div class="cite">
-                <a href="https://ieeexplore.ieee.org/document/5582063">Perez et al. (2010)</a>
+                <a href="https://docs.google.com/presentation/d/1evNXCddIllXUt4a5jKfmlO2197sp8T6I9L650cYZcsk/edit#slide=id.g4f68f3bd89_0_0">Scott Henderson (UW eScience)</a>
             </div>
+    </section>
 
-        </section>
+    <section>
+        <a href="http://pangeo.io/"><img src="img/pangeo_simple_logo.svg" height=100></a>
+        <br>
 
-        <section>
-            <h2>Python in Astronomy (ADS)</h2>
-            <img src="img/python-in-astro.png" height=400>
-        </section> -->
+        <h2> A community platform for Big Data Geoscience</h2>
+        <h2 class="fragment"> Open-source scientific computing tools and large open datasets on cloud computing served through the web-browser</h2>
+    </section>
 
-        <section>
-            <h2>Cloud computing</h2>
-            <div class="fragment">
-            <img src="img/kubernetes.png" height=200><br>
-            Kubernetes
+    <section>
+        <h2>Why use the cloud?</h2>
+        <p class="fragment">Instant access to data and computing</p>
+        <p class="fragment">Access control</p>
+        <p class="fragment">Data and compute are centralized</p>
+        <p class="fragment">Minimal data transfers</p>
+        <p class="fragment">Portable and reproducible</p>
+    </section>
+
+	<section>
+        <h2>Reproducibility in the age of computational science</h2>
+        <blockquote>
+                "An article about computational result is advertising, not scholarship.
+                The actual scholarship is the full software environment, code and data that produced the result."
+        </blockquote>
+        <div class="cite">
+            <a href="https://statweb.stanford.edu/~wavelab/Wavelab_850/wavelab.pdf"> Buckheit and Donoho (1995)</a>,
+            <br> <a href="https://library.seg.org/doi/abs/10.1190/1.1822162"> Claerbout and Karrenbach (1992)</a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Scientific computing in Python</h2>
+        <p class="fragment">Python: an ecosystem for scientific computing </p>
+        <p class="fragment">Free and open source</p>
+        <p class="fragment">High-level interpreted language</p>
+        <p class="fragment">Very wide adoption</p>
+        <p class="fragment">Both in academic research and in industry</p>
+
+        <div class="cite">
+            <a href="https://ieeexplore.ieee.org/document/5582063">Perez et al. (2010)</a>
+        </div>
+    </section>
+
+	<section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network1.png">
+    </section>
+
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network2.png">
+    </section>
+
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network3.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network4.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network5.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network6.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network7.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network8.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network9.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network10.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network11.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network12.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network13.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network14.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network15.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network16.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network17.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network18.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network19.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network20.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network21.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network22.png">
+    </section>
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network23.png">
+    </section>
+
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network24.png">
+    </section>
+
+    <section>
+            <h2>Scientific computing in Python</h2>
+            <img src="img/python-network25.png">
+    </section>
+
+    <section>
+        <img src="img/jupyter-logo.svg" height=200;>
+        <div>
+            <p class="fragment">Interactive computing through the web browser</p>
+            <p class="fragment">Awarded the 2018 ACM Software System Award</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>The Jupyter notebook</h2>
+        <img src="img/notebook_example.png">
+    </section>
+
+    <section>
+        <img src="img/pangeo_simple_logo.svg" height=100>
+        <img src="img/pangeo_architecture.png">
+    </section>
+
+    <section>
+        <h1>Demo</h1>
+    </section>
+
+    <section>
+        <h2>Binder demo</h2>
+    </section>
+
+    <section>
+        <h2>Barriers to adoption</h2>
+        <p class="fragment">Data formats</p>
+        <p class="fragment">Data standardization</p>
+        <p class="fragment">Reluctance to share data</p>
+        <p class="fragment">New skills required</p>
+        <p class="fragment">The tools are rapidly evolving</p>
+    </section>
+
+    <section>
+        <h2>BIDS: a scientist-friendly data standard</h2>
+        <img src="img/bids.jpg">
+        <div class="cite">
+                <a href="https://www.nature.com/articles/sdata201644">Gorgolewski et al. (2016)</a>
+        </div>
+    </section>
+
+    <section>
+    <h2>The team</h2>
+    <div class="row " data-fragment-index="1">
+        <div class="imgcite">
+            <div class="imghead">Beth Buffalo (UW)</div>
+            <img src="img/beth.png" height="200">
+        </div>
+        <div class="imgcite">
+            <div class="imghead">Adrienne Fairhall (UW)</div>
+            <img src="img/adrienne.png" height="200">
+        </div>
+        <div class="imgcite">
+                <div class="imghead">Xiao-jing Wang (NYU)</div>
+                <img src="img/xiaojing.png" height="200">
+        </div>
+        <div class="imgcite">
+                <div class="imghead">David Freedman (U Chicago)</div>
+                <img src="img/dave.png" height="200">
+        </div>
+    </div>
+
+    <div class="row " data-fragment-index="1">
+        <div class="imgcite">
+            <div class="imghead">Bob Knight (UC Berkeley)</div>
+            <img src="img/bob.png" height="200">
+        </div>
+        <div class="imgcite">
+            <div class="imghead">Jack Lin (UC Irvine)</div>
+            <img src="img/jack.png" height="200">
+        </div>
+        <div class="imgcite">
+                <div class="imghead">Jeff Ojemann (UW)</div>
+                <img src="img/jeff.png" height="200">
+        </div>
+        <div class="row fragment" data-fragment-index="1">
+
+            <div class="imgcite">
+                    <div class="imghead">Joe Hamman (NCAR)</div>
+                    <img src="img/joe_headshot.png" height="200">
             </div>
-            <p class="fragment">Vendor agnostic</p>
-            <p class="fragment">Public cloud, HPC, combinations </p>
-            <p class="fragment">For now: Google's cloud </p>
-        </section>
-
-        <section>
-            <img src="img/jupyter-logo.svg" height=200;>
-
-            <div>
-                <p class="fragment">Grew out of IPython (an interactive Python shell)</p>
-                <p class="fragment">Awarded the 2018 ACM Software System Award</p>
+            <div class="imgcite">
+                    <div class="imghead">Ryan Abernathy (Columbia)</div>
+                    <img src="img/ryan.jpg" height="200">
             </div>
-        </section>
-
-        <section>
-            <h2>The Jupyter notebook</h2>
-            <img src="img/notebook_example.png">
-        </section>
-
-        <section>
-                <img src="img/pangeo_simple_logo.svg" height=100>
-                <img src="img/pangeo_architecture.png">
-        </section>
-
-    <section>
-        <h2>Data sharing</h2>
+        </div>
+    </div>
     </section>
-	<section>
-		<h2>Reproducibility in the age of computational science</h2>
-		<blockquote>
-				"An article about computational result is advertising, not scholarship.
-				The actual scholarship is the full software environment, code and data that produced the result."
-		</blockquote>
-		<div class="cite">
-			<a href="https://statweb.stanford.edu/~wavelab/Wavelab_850/wavelab.pdf"> Buckheit and Donoho (1995)</a>,
-			<br> <a href="https://library.seg.org/doi/abs/10.1190/1.1822162"> Claerbout and Karrenbach (1992)</a>
-		</div>
-	</section>
 
 	<section>
-		<h2>What is the value of reproducible research?</h2>
-		<p class="fragment">Reproducibility</p>
-		<p class="fragment">Public access</p>
-		<br>
-		<p class="fragment">Improved research quality</p>
-		<p class="fragment">Greater impact</p>
-		<p class="fragment">About 10% higher citation rate</p>
-		<p class="fragment">Reuse, extension, interoperability</p>
-		<div class="cite">
-			<a href="https://academic.oup.com/biostatistics/article/11/3/385/257703">Donoho (2010)</a><br>
-			<a href="https://peerj.com/articles/175/">Piwowar and Vision (2013)</a><br>
-			<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026828">Wicherts et al. (2011)</a>
-		</div>
-	</section>
-
-    <section>
-        <h2>Considerations in data sharing</h2>
-        <h3 class="fragment">When?</h3>
-        <h3 class="fragment">What?</h3>
-        <h3 class="fragment">Where?</h3>
+    <h2>Thanks!</h2>
+        <div class="row " data-fragment-index="1">
+            <div class="imgcite two-col">
+            <img src="img/brain-logo.png" height="200" align="middle" >
+            </div>
+            <div class="imgcite two-col">
+            <img src="img/NINDS.jpg" height="200" align="middle" >
+            </div>
+        </div>
     </section>
 
     <section>
-        <a href="https://www.sciencedirect.com/science/article/pii/S0896627318310390"><img src="img/poldrack_neuron.png"></a>
+        <h2>Pangeo is also supported by</h2>
+        <img src="img/pangeo-backers.png">
     </section>
-
     <section>
-            <h2>The data life-cycle</h2>
-            <img src="img/ds_aims.png">
-    </section>
-
-    <!--
-	<section>
-		<h2>Arguments against availability of data and code</h2>
-		<p class="fragment">Focusing on the wrong things</p>
-		<p class="fragment">Waste of effort and resources</p>
-		<p class="fragment">No immediate utility</p>
-		<p class="fragment">Provides a disincentive to doing hard/risky experiments</p>
-	</section>
-
-	<section>
-		<h2>Ways to mitigate these objections</h2>
-		<p class="fragment">Reasonable data embargos</p>
-		<p class="fragment">Provide incentives for publication of valuable data and analysis</p>
-		<p class="fragment">Make data and code publication easier</p>
-		<p class="fragment">Publish useful extractions from the data</p>
-	</section>
-
-	<section>
-		<h2>AFQ-Browser</h2>
-
-		<video width="800" autoplay loop>
-			<source src="./img/afq-browser-demo.mp4">
-		</video>
-
-		<div class="cite">
-			<a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, Smith, Keshavan & Rokem (2018)<br></a>
-		</div>
-
-	</section>
-
-	<section>
-		<h2>Automatic data publication</h2>
-
-		<img src="./img/afq-browser-static.png" width="800px">
-
-		<div class="cite">
-			<a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, Smith, Keshavan & Rokem (2018)<br></a>
-		</div>
-
-		<svg class="fragment" width="400" height="110"  style="position: absolute; left:435px; top:500px;">
-			<rect rx="10" ry="10" width="150" height="60" style="fill:yellow;stroke-width:3;stroke:rgb(1,0,0);opacity:0.4;" />
-		</svg>
-
-		<svg class="fragment" width="400" height="110"  style="position: absolute; left:780px; top:150px;">
-			<rect rx="10" ry="10" width="100" height="60" style="fill:yellow;stroke-width:3;stroke:rgb(1,0,0);opacity:0.4;" />
-		</svg>
-
-	</section>
-
-	<section>
-		<h2>Further exploration</h2>
-
-		<video width="800" autoplay loop>
-			<source src="./img/afq-browser-binder-demo.mp4">
-		</video>
-
-		<div class="cite">
-			<a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, Smith, Keshavan & Rokem (2018)<br> Nature Communications</a>
-		</div>
-	</section>
-
-	<section>
-		<h2>Training for data science and neuroscience</h2>
-		<p class="fragent">Methods in data science are rapidly changing</p>
-		<p class="fragment">Tools and practcies that are not usually part of the standard neuroscience curriculum</p>
-		<p class="fragment">Learning often requires substantial hands-on experience</p>
-	</section>
-
-	<section>
-		<h2>Communities of practice and training</h2>
-		<p class="fragment"><a href="https://carpentries.org/">Software/Data Carpentry</a></p>
-		<p class="fragment"><a href="http://www.brainhack.org/">Brain hacks</a></p>
-		<p class="fragment"><a href="http://www.pnas.org/content/early/2018/08/17/1717196115">Hack weeks</a></p>
-		<p class="fragment">=> <a href="https://neurohackademy.org/">NeuroHackademy</a></p>
-		<img src="img/joy_of_hacking.png" height=200>
-		<div class="cite">
-			<a href="http://www.pnas.org/content/early/2018/08/17/1717196115">Huppenkothen et al. (2018)</a>
-		</div>
-	</section>
-
-
-	<section>
-
-	<h2>"How aggressive should we be about data sharing, task standardization and data aggregation?"</h2>
-
-	<h2>"Is data sharing working well enough?  If not, why not?"</h2>
-
-	<h2>"How should NIH help to coordinate computational infrastructure?"</h2>
-
-	</section> -->
-
-
-	<section>
-		<h2>Thanks!</h2>
-	<div style="position: absolute; left:20px; top:100px;" align="left">
-			<img src="img/nimh-logo.gif" height="60px">
-		<br>
-		<img src="img/nibib-logo.png" height="60px">
-		<br>
-		<img src="img/brain-initiative.png" height="100px">
-		<img src="img/ninds-logo.png" height="60px">
-	</div>
-
-	<div style="position: absolute; left:500px; top:80px;">
-			<img src="img/msdse-sponsors.png" height="100px">
-			<br>
-			<img src="img/BMGF-logo.png" height="100px">
-			<img src="img/nsf-logo.jpeg" height="100px">
-			<br>
-			<img src="img/uwin-logo.jpg" height="80px">
-			<img src="img/eScience.png" height="80px">
-	</div>
-
-	</section>
-
-	<section>
 
 		<div style="position:absolute; left: 200px; top:-120px;">
 		<h2>Contact information</h2>
